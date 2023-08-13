@@ -15,6 +15,30 @@ Assignment is rendering a value into variable after declaring
 
 Initialization is rendering a value into variable while declaring
 - var userName = 'arjun';
+---
+
+Var is function scope Variable.
+
+We can declare in any block of function & access it from any other block function.
+
+---
+
+var allows shadowing.
+
+var is process of redeclaring same name identifier within the scope.
+
+---
+
+var also allows hoisting.
+
+It is a compiling technique, where compiler can find the declaration of variable before using it.
+
+---
+
+
+
+
+
 
   
   
