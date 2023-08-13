@@ -9,3 +9,7 @@ userName = 'arjun';
 //Initialization
 var userName = 'arjun';
 
+console.log(userName);
+
+
+
