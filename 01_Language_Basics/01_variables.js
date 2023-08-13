@@ -11,6 +11,7 @@ var userName = 'arjun';
 
 console.log(userName);
 
+{/*var*/}
 
 // var is function scope variable
 function f1(){
@@ -45,4 +46,34 @@ function f3(){
     var a; //hosting
 }
 f3();
+
+{/*let*/}
+
+//let is block scope variable
+function f4(){
+    let userId = 144;
+
+    if(userId == 144){
+        let userName2 = 'krishna' //block scope variable
+    }   
+
+    //userName2 is block scope var, hence not accessable outside
+
+    //console.table([userId, userName2]);
+}
+f4();
+
+{/*const*/}
+
+function f5(){
+    const userCity = 'pune';
+
+    if(userCity == 'pune'){
+        const userState = 'maharashtra';
+        //userState = 'gujrat' (invalid)
+        console.log(userState);
+    }
+}
+f5();
+
 
