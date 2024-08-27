@@ -1,0 +1,29 @@
+<script>
+
+  var userName = prompt("enter user name");
+  var password = prompt("enter password");
+  var item = prompt("enter your product");
+
+  class displayProduct 
+  {
+    _productName;
+    get ProductName()
+    {
+      return this._productName;
+    }
+    set ProductName(newName)
+    {
+      if(userName === "john" && password === "john@69"){
+        this._productName = newName;
+      }else{
+        document.write("unauthorized")
+      }
+    }
+  };
+
+  let obj = new displayProduct;
+  obj.ProductName = item;
+  if(obj.ProductName){
+    document.write(`product name: ${obj.ProductName}`)
+  }
+</script>
