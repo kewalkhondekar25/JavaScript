@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>constructor</title>
+  <script>
+    class Database {
+      Insert(){
+        document.write("data inserted");
+      };
+      Delete(){
+        document.write("data deleted");
+      }
+    }
+    let obj = new Database;
+
+    const InsertClick = () => {
+      obj.Insert();
+    };
+    const DeleteClick = () => {
+      obj.Delete();
+    }
+  </script>
+</head>
+<body>
+  <button onclick="InsertClick()">Insert</button>  
+  <button onclick="DeleteClick()">Delete</button>
+</body>
+</html>
