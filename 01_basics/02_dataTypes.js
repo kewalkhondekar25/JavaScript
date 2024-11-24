@@ -16,3 +16,6 @@ console.table([name, age, isAdult, status]);
 │ 3       │ undefined │
 └─────────┴───────────┘
 */
+
+console.log(`Max: ${Number.MIN_SAFE_INTEGER} \n Min: ${Number.MIN_SAFE_INTEGER}`);
+
