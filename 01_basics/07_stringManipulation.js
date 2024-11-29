@@ -8,4 +8,3 @@ const restWord = a.substring(1);
 const finalWord = firstWord.toUpperCase() + restWord.toLocaleLowerCase();
 
 console.log("Capitalize: ", finalWord);
-
