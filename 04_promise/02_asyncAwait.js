@@ -21,3 +21,25 @@ const handlePromiseOne = async () => {
 };
 
 handlePromiseOne();
+
+//using fetch
+fetch("https://fakestoreapi.com/products")
+.then((response) => {
+  return response.json();
+})
+.then((data) => {
+  console.log("using fetch", data);
+}).catch((err) => {
+  console.log(err);
+});
+
+const getFakeStoreApiData = async () => {
+  try {
+    const response = await fetch("https://fakestoreapi.com/products");
+    const data = await response.json();
+    console.log("using async await", data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+getFakeStoreApiData();
