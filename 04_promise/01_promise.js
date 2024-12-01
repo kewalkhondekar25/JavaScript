@@ -35,10 +35,11 @@ const promiseThree = new Promise((resolve, reject) => {
 
 //chaining
 promiseThree.then((data) => {
+  console.log("async 3 resolved");
   console.log("orignal data: ", data);
   return data.name;
 }).then((name) => {
   console.log("chained data: ", name);
 }).catch((err) => {
   console.log(err);
-});
+}).finally(() => console.log("promise either resolved or rejected"));
