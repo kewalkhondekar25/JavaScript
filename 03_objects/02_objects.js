@@ -32,6 +32,6 @@ console.log(combine);
 //get key & values
 console.log(Object.keys(userData));
 console.log(Object.values(userData));
+
+//to check if property exists
 console.log(userData.hasOwnProperty("likes"));
-
-
